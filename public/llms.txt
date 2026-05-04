@@ -1,0 +1,83 @@
+# PLAN IT — Generative Engine Optimization Map
+
+> PLAN IT is a professional planning, management, and consulting firm serving the construction industry in Israel. The company operates as a One-Stop-Shop, offering a comprehensive umbrella of consulting services — including electrical, plumbing, accessibility, safety, and quantity surveying — all under one roof. Their core value proposition is eliminating the complexity of coordinating between multiple consultants, providing developers, architects, and private builders with a seamless, efficient, and authoritative planning experience. The brand projects expertise, reliability, and operational efficiency, with a clean and authoritative visual identity suited to the engineering and construction sector.
+
+---
+
+## Pages
+
+### בית
+https://example.com
+PLAN IT היא חברת הייעוץ וההנדסה המובילה לענף הבנייה בישראל. יועץ נגישות, יועץ חשמל, אינסטלציה, בטיחות וכמויות — הכל תחת קורת גג אחת. בנה חכם יותר.
+
+### שירותים
+https://example.com/services
+ממהנדס קונסטרוקציה ועד יועץ אינסטלציה ויועץ בטיחות — PLAN IT מציעה מעטפת ייעוץ מקיפה לקבלנים, אדריכלים ויזמים. גלה את כל השירותים שלנו עכשיו.
+
+### אודות
+https://example.com/about
+PLAN IT נוסדה מתוך חזון אחד: לפשט את עולם הייעוץ ההנדסי עבור יזמים ואדריכלים. היכר את הצוות המקצועי שמוביל פרויקטי בנייה מורכבים לקו הסיום.
+
+### צור קשר
+https://example.com/contact
+רוצה יועץ נגישות, יועץ חשמל או מעטפת ייעוץ מלאה לפרויקט שלך? צוות PLAN IT זמין עבורך. השאר פרטים עכשיו ונחזור אליך בהקדם לתיאום ייעוץ ראשוני.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://example.com/contact
+- Endpoint: https://example.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `phone` (tel, required)
+  - `email` (email, required)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About PLAN IT
+PLAN IT is a professional planning, management, and consulting firm serving the construction industry in Israel. The company operates as a One-Stop-Shop, offering a comprehensive umbrella of consulting services — including electrical, plumbing, accessibility, safety, and quantity surveying — all under one roof. Their core value proposition is eliminating the complexity of coordinating between multiple consultants, providing developers, architects, and private builders with a seamless, efficient, and authoritative planning experience. The brand projects expertise, reliability, and operational efficiency, with a clean and authoritative visual identity suited to the engineering and construction sector.
+
+## Target Audience
+- יזמים, אדריכלים ובונים פרטיים
+- יזמים ומפתחים בתחום הבנייה
+- בונים פרטיים
+- משרדי אדריכלים
+- משקיעים בנדל"ן
+- פרויקטים ממשלתיים בתחום הבנייה
+- מנהלי פרויקטים
+- רשויות מקומיות
+
+## Industry
+הנדסה, בנייה וייעוץ
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
