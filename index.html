@@ -298,11 +298,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -327,7 +353,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/plan-it-logo.webp" alt="PLAN IT" class="logo" data-image-type="logo" style="">
+        <img src="/assets/plan-it-logo.webp" alt="PLAN IT" class="logo" data-image-type="logo" >
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li></ul></div>
 
@@ -798,10 +824,10 @@
       <p><span class="index-hero-label" style="color: rgb(45, 42, 38) !important;">One-Stop-Shop לבנייה</span>
 
       
-      </p><!-- H1 --><h1 class="index-hero-h1" style="">מיטב המתכננים והיועצים בענף הבנייה —במקום אחד</h1>
+      </p><!-- H1 --><h1 class="index-hero-h1" >מיטב המתכננים והיועצים בענף הבנייה —במקום אחד</h1>
 
       <!-- Subtitle -->
-      <h3 class="index-hero-subtitle" style="">אנחנו מביאים ניסיון עשיר בתכנון וליווי עשרות פרויקטים, תוך דגשים על התייעלות תכנונית וכלכלית.</h3>
+      <h3 class="index-hero-subtitle" >אנחנו מביאים ניסיון עשיר בתכנון וליווי עשרות פרויקטים, תוך דגשים על התייעלות תכנונית וכלכלית.</h3>
 
       <!-- Service chips -->
       <div class="index-hero-chips" aria-label="תחומי שירות">
@@ -829,13 +855,13 @@
   </div>
 </section>
 
-<section class="index-services-section" data-layout-spec="בית-services" dir="rtl">
+<section class="index-services-section" data-layout-spec="בית-services" dir="rtl" id="index-services-section">
   <div class="index-services-container">
 
     <!-- Intro Block -->
     <div class="index-services-intro">
-      <span class="index-services-label">השירותים שלנו</span>
-      <h2 class="index-services-heading">מעטפת תכנון מלאה — <br>תחת קורת גג אחת</h2>
+      <p class="zappy-editable"><span class="index-services-label" style="color: rgb(45, 42, 38) !important;">השירותים שלנו</span>
+      </p><h2 class="index-services-heading">מעטפת תכנון מלאה — <br>תחת קורת גג אחת</h2>
       <p class="index-services-subtext">בPLAN IT אנו מרכזים את כלל יועצי הבנייה במסגרת מקצועית אחת ומתואמת. לא עוד תיאומים מורכבים בין עשרה יועצים שונים — אנחנו מנהלים את הכל עבורכם, מהתכנון ועד האישור הסופי.</p>
     </div>
 
@@ -843,7 +869,7 @@
     <div class="index-services-grid">
 
       <!-- Card 1: Electrical -->
-      <article class="index-services-card">
+      <article class="index-services-card" data-grid-item-index="0">
         <div class="index-services-card-icon">
           <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M20 4L8 20h10l-2 12 12-16H18L20 4z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -856,7 +882,7 @@
       </article>
 
       <!-- Card 2: Plumbing -->
-      <article class="index-services-card">
+      <article class="index-services-card" data-grid-item-index="1">
         <div class="index-services-card-icon">
           <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M10 6v8a8 8 0 0 0 16 0V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
@@ -872,7 +898,7 @@
       </article>
 
       <!-- Card 3: Accessibility (highlighted) -->
-      <article class="index-services-card index-services-card--highlight">
+      <article class="index-services-card index-services-card--highlight" data-grid-item-index="2">
         <div class="index-services-card-icon">
           <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="18" cy="7" r="3" stroke="currentColor" stroke-width="1.8"></circle>
@@ -884,12 +910,12 @@
         <div class="index-services-card-body">
           <h3>יועץ נגישות</h3>
           <p>ליווי מקצועי לעמידה בתקן הנגישות הישראלי — תכנון, בדיקה ואישור נגישות לכלל משתמשי המבנה. אנו מכירים לעומק את הדרישות הרגולטוריות ומייעלים את תהליך האישור.</p>
-          <span class="index-services-card-badge">שירות מוביל</span>
-        </div>
+          <p class="zappy-editable"><span class="index-services-card-badge" style="color: rgb(45, 42, 38) !important;">שירות מוביל</span>
+        </p></div>
       </article>
 
       <!-- Card 4: Safety -->
-      <article class="index-services-card">
+      <article class="index-services-card" data-grid-item-index="3">
         <div class="index-services-card-icon">
           <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M18 4L6 9v10c0 7 5.4 13.5 12 15.5C24.6 32.5 30 26 30 19V9L18 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
@@ -903,7 +929,7 @@
       </article>
 
       <!-- Card 5: Quantity Surveying -->
-      <article class="index-services-card">
+      <article class="index-services-card" data-grid-item-index="4">
         <div class="index-services-card-icon">
           <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect x="6" y="4" width="24" height="28" rx="3" stroke="currentColor" stroke-width="1.8"></rect>
@@ -913,6 +939,17 @@
         <div class="index-services-card-body">
           <h3>כתבי כמויות ומדידות</h3>
           <p>הכנת כתבי כמויות מפורטים לצורכי מכרזים, הצעות מחיר ובקרת עלויות. שירות מדידות מקצועי המספק בסיס מוצק לתכנון כלכלי ויעיל של הפרויקט.</p>
+        </div>
+      </article><article class="index-services-card" style="background-color: rgb(255, 255, 255) !important; padding: 24px 20px !important; box-sizing: border-box; grid-area: auto !important;" data-grid-item-index="5">
+        <div class="index-services-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-element-id="icon-1777975755726-k0j1drzg6">
+            <rect x="6" y="4" width="24" height="28" rx="3" stroke="currentColor" stroke-width="1.8"></rect>
+            <path d="M11 12h14M11 18h14M11 24h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div class="index-services-card-body">
+          <h3 >מדידות</h3>
+          <p >טקסט כאן</p>
         </div>
       </article>
 
